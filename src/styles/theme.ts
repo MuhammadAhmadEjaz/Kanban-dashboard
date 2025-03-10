@@ -1,0 +1,95 @@
+import { DefaultTheme } from 'styled-components';
+
+export const lightTheme: DefaultTheme = {
+  colors: {
+    primary: '#4a6cfa',
+    secondary: '#6c757d',
+    success: '#28a745',
+    danger: '#dc3545',
+    warning: '#ffc107',
+    info: '#17a2b8',
+    light: '#f8f9fa',
+    dark: '#343a40',
+    background: '#ffffff',
+    text: '#212529',
+    border: '#dee2e6',
+    modalOverlay: 'rgba(0, 0, 0, 0.5)',
+    columnBackground: '#f5f7f9',
+    taskBackground: '#ffffff',
+    lowPriority: '#28a745',
+    mediumPriority: '#ffc107',
+    highPriority: '#dc3545',
+    inputBackground: '#ffffff',
+    hover: '#e9ecef',
+  },
+  font: {
+    family: {
+      primary: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+    },
+    size: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      md: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      xxl: '1.5rem',
+    },
+    weight: {
+      light: 300,
+      regular: 400,
+      medium: 500,
+      semiBold: 600,
+      bold: 700,
+    },
+  },
+  spacing: {
+    xs: '0.25rem',
+    sm: '0.5rem',
+    md: '1rem',
+    lg: '1.5rem',
+    xl: '2rem',
+    xxl: '3rem',
+  },
+  borderRadius: {
+    sm: '0.25rem',
+    md: '0.375rem',
+    lg: '0.5rem',
+    xl: '0.75rem',
+    xxl: '1rem',
+  },
+  shadows: {
+    sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+    md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+    lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+    xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+  },
+  transitions: {
+    fast: '0.15s ease-in-out',
+    normal: '0.25s ease-in-out',
+    slow: '0.35s ease-in-out',
+  },
+  zIndex: {
+    modal: 1000,
+    dropdown: 100,
+    header: 50,
+  },
+};
+
+export const darkTheme: DefaultTheme = {
+  ...lightTheme,
+  colors: {
+    ...lightTheme.colors,
+    primary: '#6c8cff',
+    background: '#121212',
+    text: '#f8f9fa',
+    border: '#343a40',
+    modalOverlay: 'rgba(0, 0, 0, 0.7)',
+    columnBackground: '#1e1e1e',
+    taskBackground: '#2d2d2d',
+    lowPriority: '#0d6d2b',
+    mediumPriority: '#d9a400',
+    highPriority: '#b52b37',
+    inputBackground: '#2d2d2d',
+    hover: '#3d3d3d',
+  },
+}; 
